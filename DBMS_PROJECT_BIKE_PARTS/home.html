@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+    <title>Home</title>
+</head>
+
+<body>
+    <header class="bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">
+                    <img src="WhatsApp Image 2024-03-08 at 11.50.57 AM.jpeg" alt="AutoParts" width="120">
+                </a>
+                <h1>Motorcycle Custom Garages</h1>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="home.php">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#aboutus">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="logout.php">logout</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart2.html" title ="fa-shopping-cart"><i class="fas fa-shopping-cart"></i></a></li>
+                        <!--<li class="nav-item"><a class="nav-link" href="remove.php">Remove Account</a></li>-->
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--- Banner -->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 d-flex align-items-center justify-content-center bg-warning text-white p-5">
+                <div>
+                    <h1>One stop shop for all accessories</h1>
+                    <p class="mb-4"><em>All motor parts available.<br>Bike modification parts also available.</em></p>
+                    <a href="products.html" class="btn btn-light btn-lg">Shop Now &#10142;</a>
+                </div>
+            </div>
+            <div class="col-md-6 banner-image"></div>
+        </div>
+    </section>
+
+    <hr>
+
+
+    <section id = "aboutus">
+        <!--- About us -->
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h2 class="textleft">About Us</h2> 
+                    <img src="bikerepair.jpeg" class="img-fluid" alt="New Product">
+                </div>
+                <div class="col-md-6 d-flex align-items-center">
+                        <div class = "aboutus">
+                            <h1>Motorcycle Custom Garages</h1>
+                            <p1>Welcome to Motorcycle Custom Garages!
+
+                                At Motorcycle Custom Garages, we're passionate about bringing your dream rides to life.<br> 
+                                Founded in 2024, our team is driven by a shared love for motorcycles and a commitment to providing enthusiasts with the highest quality customizations.
+                                <br>
+                                <h3>Our Mission</h3>
+                                Our mission is to transform your biking experience through personalized and innovative solutions. 
+                                We believe that every rider is unique, and your motorcycle should reflect your individuality. 
+                                Whether you're seeking custom frames, precision brakes, or sleek wheels, we're here to turn your vision into reality
+                                <h3>Why Choose Us?</h3>
+                                <ul>
+                                    <li>
+                                        <strong>Expert Craftsmanship:</strong>
+                                        Our skilled craftsmen bring years of experience to the table.
+                                        We take pride in the meticulous attention to detail that goes into each customization, ensuring that every project meets the highest standards.
+                                    </li>
+                                    <li>
+                                        <strong>Quality Materials:</strong>
+                                        We source only the finest materials for our builds.
+                                        Your safety and satisfaction are our top priorities, and we don't compromise on the quality of our parts and components.
+                                    </li>
+                                    <li>
+                                        <strong>Customer-Centric Approach:</strong>
+                                        Your journey with us is as important as the final product.
+                                        Our team is dedicated to providing exceptional customer service, guiding you through the customization process, and ensuring your complete satisfaction.
+                                    </li>
+                                </ul>
+                            <br>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <hr>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="container my-5">
+        <div class="row">
+            <div class="col-12 mb-4">
+                <h2 class="text-left">Contact Us</h2>
+            </div>
+            <div class="col-md-8 mx-auto border rounded p-4 shadow-sm">
+                <!-- Form connected to contactme.php -->
+                <form action="contactme.php" method="post">
+                    <div class="mb-3">
+                        <label for="contactName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="contactName" name="contactName" placeholder="Enter your name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contactEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="Enter your email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contactMessage" class="form-label">Message</label>
+                        <textarea class="form-control" id="contactMessage" name="contactMessage" rows="3" placeholder="Your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+   <!--- Footer -->
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="WhatsApp Image 2024-03-08 at 11.50.57 AM.jpeg" alt="AutoParts" class="mb-2" width="100">
+                    <p>Join for a better riding companion!</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Navigation</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="/" class="text-decoration-none text-light">Home</a></li>
+                        <li><a href="products.html" class="text-decoration-none text-light">Products</a></li>
+                        <li><a href="#contact" class="text-decoration-none text-light">Contact</a></li>
+                    </ul>
+                </div>
+              <!--  <div class="col-md-3">
+                    <h3>Useful Links</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-light">Coupons</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Blog Post</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Return Policy</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Join Affiliate</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h3>Follow Us</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-light">Facebook</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Twitter</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Instagram</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">YouTube</a></li>
+                    </ul>
+                </div>
+            </div> -->
+            <hr class="my-4"> 
+            <div class="text-center">&copy; Copyright 2024 - Motorcycle Custom Garages </div>
+        </div>
+    </footer>
+</body>
+</html>
